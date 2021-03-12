@@ -1,0 +1,52 @@
+html {
+  margin: 0;
+  background: url(/cool-background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+body {
+  padding-top: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  border-radius: 5px;
+  width: 60%;
+  background: rgba(181, 184, 182, 0.445);
+  padding: 10px;
+}
+
+.stopwatch {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.buttons .btn {
+  font-family: "Roboto Mono", monospace;
+  border: 0px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.buttons .btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .stopwatch {
+    font-size: 1.5em;
+  }
+  .buttons .btn {
+  }
+  .buttons {
+    gap: 20px;
+  }
+}
